@@ -1,7 +1,7 @@
-package org.firstinspires.ftc.teamcode.trailblazer.path;
+package org.firstinspires.ftc.teamcode.subsystems.trailblazer.path;
 
 
-import org.firstinspires.ftc.teamcode.trailblazer.drivebase.Drive;
+import org.firstinspires.ftc.teamcode.subsystems.trailblazer.drivebase.Drive;
 import org.fotmrobotics.trailblazer.Pose2D;
 import org.fotmrobotics.trailblazer.Spline;
 import org.fotmrobotics.trailblazer.Vector2D;

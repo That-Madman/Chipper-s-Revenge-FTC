@@ -1,10 +1,10 @@
-package org.firstinspires.ftc.teamcode.trailblazer.path;
+package org.firstinspires.ftc.teamcode.subsystems.trailblazer.path;
 
 import static org.fotmrobotics.trailblazer.PathKt.driveVector;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
-import org.firstinspires.ftc.teamcode.trailblazer.drivebase.Drive;
+import org.firstinspires.ftc.teamcode.subsystems.trailblazer.drivebase.Drive;
 import org.fotmrobotics.trailblazer.MathKt;
 import org.fotmrobotics.trailblazer.PIDF;
 import org.fotmrobotics.trailblazer.Pose2D;

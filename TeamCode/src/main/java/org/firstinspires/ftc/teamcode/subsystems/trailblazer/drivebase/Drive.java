@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.trailblazer.drivebase;
+package org.firstinspires.ftc.teamcode.subsystems.trailblazer.drivebase;
 
 import static org.fotmrobotics.trailblazer.MathKt.angleWrap;
 
@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
-import org.firstinspires.ftc.teamcode.trailblazer.path.PathBuilder;
+import org.firstinspires.ftc.teamcode.subsystems.trailblazer.path.PathBuilder;
 import org.fotmrobotics.trailblazer.PIDF;
 import org.fotmrobotics.trailblazer.Pose2D;
 import org.fotmrobotics.trailblazer.Vector2D;

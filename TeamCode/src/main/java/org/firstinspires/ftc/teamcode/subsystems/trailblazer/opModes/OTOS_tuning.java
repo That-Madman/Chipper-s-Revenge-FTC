@@ -1,9 +1,9 @@
-package org.firstinspires.ftc.teamcode.trailblazer.opModes;
+package org.firstinspires.ftc.teamcode.subsystems.trailblazer.opModes;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
-import org.firstinspires.ftc.teamcode.trailblazer.drivebase.Odometry;
+import org.firstinspires.ftc.teamcode.subsystems.trailblazer.drivebase.Odometry;
 import org.fotmrobotics.trailblazer.Pose2D;
 
 @TeleOp (group = "Trailblazer_OpModes")

@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.trailblazer.path;
+package org.firstinspires.ftc.teamcode.subsystems.trailblazer.path;
 
 import java.util.concurrent.Callable;
 
