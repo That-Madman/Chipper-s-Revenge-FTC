@@ -5,6 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 import org.firstinspires.ftc.teamcode.subsystems.Arm;
+import org.firstinspires.ftc.teamcode.subsystems.Claw;
 import org.firstinspires.ftc.teamcode.subsystems.trailblazer.drivebase.Drive;
 
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.List;
 public class Teleop extends LinearOpMode {
     Drive drive;
     Arm arm;
+    Claw claw;
 
     List<LynxModule> allHubs;
 
@@ -26,12 +28,14 @@ public class Teleop extends LinearOpMode {
 
         drive = new Drive(hardwareMap);
         arm = new Arm(hardwareMap);
+        claw = new Claw(hardwareMap);
 
         waitForStart();
 
         while(opModeIsActive() && !isStopRequested()) {
             drive.mecanumDrive(gamepad1);
             arm.moveArmSimple(gamepad2);
+            claw.useClaw(gamepad2);
         }
     }
 }
