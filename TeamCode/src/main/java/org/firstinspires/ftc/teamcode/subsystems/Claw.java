@@ -19,14 +19,14 @@ public class Claw {
         open = map.get(Servo.class, "open");
     }
 
-    public void useClaw (Gamepad gamepad) {
-        if (!aHeld && gamepad.left_bumper) rotState = ! rotState;
-        if (!bHeld && gamepad.right_bumper) openState = ! openState;
+    public void useClaw (Gamepad gamepad1, Gamepad gamepad2) {
+        if (!aHeld && gamepad2.b) rotState = ! rotState;
+        if (!bHeld && gamepad1.right_bumper) openState = ! openState;
 
         rot.setPosition(rotState ? 1 : 0);
         open.setPosition(openState ? 1 : 0);
 
-        aHeld = gamepad.left_bumper;
-        bHeld = gamepad.right_bumper;
+        aHeld = gamepad2.b;
+        bHeld = gamepad1.right_bumper;
     }
 }

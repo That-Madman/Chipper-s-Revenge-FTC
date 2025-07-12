@@ -38,7 +38,7 @@ public class Teleop extends LinearOpMode {
         while(opModeIsActive() && !isStopRequested()) {
             drive.mecanumDrive(gamepad1);
             arm.moveArmSimple(gamepad2);
-            claw.useClaw(gamepad1);
+            claw.useClaw(gamepad1, gamepad2);
             lift.useLift(gamepad2);
         }
     }
