@@ -20,13 +20,13 @@ public class Claw {
     }
 
     public void useClaw (Gamepad gamepad) {
-        if (!aHeld && gamepad.a) rotState = ! rotState;
-        if (!bHeld && gamepad.b) openState = ! openState;
+        if (!aHeld && gamepad.left_bumper) rotState = ! rotState;
+        if (!bHeld && gamepad.right_bumper) openState = ! openState;
 
         rot.setPosition(rotState ? 1 : 0);
         open.setPosition(openState ? 1 : 0);
 
-        aHeld = gamepad.a;
-        bHeld = gamepad.b;
+        aHeld = gamepad.left_bumper;
+        bHeld = gamepad.right_bumper;
     }
 }
